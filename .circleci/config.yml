@@ -5,13 +5,13 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: "Hello!"
+      - run: echo "Hello One!"
   two:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: "Hello!"
+      - run: echo "Hello Two!"
 workflows:
   version: 2
   one_and_two:
